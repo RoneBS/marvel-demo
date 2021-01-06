@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { Title } from './styles';
+import Header from '../../components/Header';
 
 const Dashboard: React.FC = () => {
-  return (
-    <>
-      <Title>Hello World</Title>
-    </>
-  );
+  return <Header />;
 };
 
 export default Dashboard;
