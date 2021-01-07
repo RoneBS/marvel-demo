@@ -1,6 +1,7 @@
 import { title } from 'process';
 import styled from 'styled-components';
 
-export const Navbar = styled.h1`
+export const Section = styled.div`
   width: 100%;
+  height: 420px;
 `;
