@@ -34,13 +34,18 @@ export const Title = styled.h1`
 `;
 
 export const Card = styled.div`
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   div {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    width: 350px;
+    width: 300px;
     height: 400px;
-    margin: 50px;
+    margin-top: 40px;
     border-radius: 40px;
     box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.2);
     background-color: grey;
