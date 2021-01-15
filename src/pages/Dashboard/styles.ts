@@ -43,18 +43,39 @@ export const Card = styled.div`
   div {
     width: 100%;
     display: flex;
-    width: 300px;
+    flex-direction: column;
+    width: 210px;
     height: 400px;
     margin-top: 40px;
-    border-radius: 40px;
     box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.2);
-    background-color: grey;
+    background-color: red;
 
     img {
-      width: 450px;
-      height: 250px;
-      border-radius: 40px;
+      width: 210px;
+      height: 350px;
       background-color: white;
     }
+
+    h1 {
+      position: absolute;
+      color: white;
+      margin: 265px 0px 0px 15px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    section {
+      width: 100%;
+      height: 200px;
+      margin-top: 5px;
+      background-color: black;
+    }
   }
+`;
+
+export const Footer = styled.footer`
+  width: 100%;
+  height: 340px;
+  margin-top: 20px;
+  background-color: black;
 `;

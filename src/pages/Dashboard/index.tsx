@@ -6,11 +6,12 @@ import Header from '../../components/Header';
 
 import sectionImg from '../../assets/wolverine.jpeg';
 
-import { Section, Title, Card } from './styles';
+import { Section, Title, Card, Footer } from './styles';
 
 type CharactersProps = {
   id: number;
   name: string;
+  description: string;
   thumbnail: {
     path: string;
     extension: string;
@@ -23,7 +24,7 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     async function loadCharacters(): Promise<void> {
       const { data } = await api.get(
-        `characters?&apikey=${process.env.REACT_APP_KEY}`,
+        `series/403/characters?&limit=${process.env.REACT_APP_LIMIT}&apikey=${process.env.REACT_APP_KEY}`,
       );
       const response = data.data.results;
 
@@ -53,12 +54,15 @@ const Dashboard: React.FC = () => {
             <div>
               <img
                 src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-                alt=""
+                alt={`${character.name}`}
               />
+              <h1>{`${character.name}`}</h1>
+              <section />
             </div>
           </Link>
         ))}
       </Card>
+      <Footer />
     </>
   );
 };
