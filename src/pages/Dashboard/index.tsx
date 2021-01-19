@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import sectionImg from '../../assets/wolverine.jpeg';
 
-import { Section, Title, Card, Footer } from './styles';
+import { Section, Title, Card } from './styles';
 
 type CharactersProps = {
   id: number;

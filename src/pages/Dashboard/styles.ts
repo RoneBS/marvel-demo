@@ -72,10 +72,3 @@ export const Card = styled.div`
     }
   }
 `;
-
-export const Footer = styled.footer`
-  width: 100%;
-  height: 340px;
-  margin-top: 20px;
-  background-color: black;
-`;
