@@ -22,6 +22,12 @@ export const List = styled.nav`
   height: 300px;
   margin-top: 170px;
 
+  p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
   ul {
     text-decoration: none;
 
@@ -30,6 +36,14 @@ export const List = styled.nav`
       list-style: none;
       margin-bottom: 10px;
       color: white;
+    }
+
+    div {
+      width: 200px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
   }
 `;

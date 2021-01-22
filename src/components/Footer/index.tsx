@@ -33,21 +33,16 @@ const Footer: React.FC = () => {
             </ul>
           </List>
           <List>
-            <ul>
-              <li>FOLLOW MARVEL</li>
-              <li>
-                <FiFacebook size={20} />
-              </li>
-              <li>
-                <FiTwitter size={20} />
-              </li>
-              <li>
-                <FiInstagram size={20} />
-              </li>
-              <li>
-                <FiYoutube size={20} />
-              </li>
-            </ul>
+            <p>FOLLOW MARVEL</p>
+            <div>
+              <FiFacebook size={20} color="#fff" />
+
+              <FiTwitter size={20} color="#fff" />
+
+              <FiInstagram size={20} color="#fff" />
+
+              <FiYoutube size={20} color="#fff" />
+            </div>
           </List>
         </div>
       </MainFooter>
