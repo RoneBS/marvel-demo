@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 :root {
   --black: #000000;
   --white: #fff;
+  --alabaster: #eeede7;
   --gray: #808080;
   --deep-gray: #333333;
   --red: #ff0000;
@@ -24,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background:#eeede7;
+    background: var(--alabaster);
   }
 `
 export default GlobalStyle
