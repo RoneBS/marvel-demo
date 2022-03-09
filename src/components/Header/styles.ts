@@ -5,13 +5,13 @@ export const Navbar = styled.nav`
   height: 50px;
   display: flex;
   justify-content: space-between;
-  background-color: #333;
+  background-color: var(--deep-gray);
 `
 export const PageList = styled.ul`
   list-style: none;
   padding: 15px;
   a {
-    color: white;
+    color: var(--white);
     font-size: 1.5rem;
     text-decoration: none;
   }

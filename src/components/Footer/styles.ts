@@ -5,7 +5,7 @@ export const MainFooter = styled.footer`
   height: 320px;
   display: flex;
   justify-content: space-around;
-  background: #000;
+  background: var(--black);
   margin-top: 50px;
   padding: 6rem;
 `
@@ -24,7 +24,7 @@ export const ExternalPages = styled.div`
     font-size: 1.3rem;
     font-weight: 600;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
   }
 `
 
@@ -45,12 +45,12 @@ export const MarvelProds = styled.div`
         font-size: 1.3rem;
         font-weight: 700;
         text-decoration: none;
-        color: #fff;
+        color: var(--white);
       }
 
       p {
         font-size: 1.4rem;
-        color: gray;
+        color: var(--gray);
       }
     }
 
@@ -65,7 +65,7 @@ export const SocialMedia = styled.div`
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
   }
 
   div {
@@ -74,13 +74,13 @@ export const SocialMedia = styled.div`
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
-    transition: color 0.2s;
 
     svg {
       color: gray;
+      transition: color 0.2s;
 
       &:hover {
-        color: #ffffff;
+        color: var(--white);
       }
     }
   }

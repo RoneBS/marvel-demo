@@ -55,14 +55,14 @@ export const HeroCard = styled.div`
   height: 310px;
   display: flex;
   flex-direction: column;
-  background: red;
+  background: var(--red);
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   border-radius: 4px 4px 4px 4px;
   box-shadow: 2px 10px 3px rgba(0, 0, 0, 0.2);
 
   div {
-    background-color: black;
+    background: var(--black);
     padding: 12px;
     text-align: center;
 
@@ -79,5 +79,5 @@ export const HeroImg = styled.img`
 `
 export const CharName = styled.h2`
   font-size: 2rem;
-  color: #fff;
+  color: var(--white);
 `
