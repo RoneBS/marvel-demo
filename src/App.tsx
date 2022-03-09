@@ -1,16 +1,10 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { CharactersProvider } from './hooks/useCharacters'
+import { Home } from './pages/Home'
 
-import GlobalStyle from './styles/global';
-import Routes from './routes';
-
-const App: React.FC = () => (
-  <>
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
-    <GlobalStyle />
-  </>
-);
-
-export default App;
+export function App() {
+  return (
+    <CharactersProvider>
+      <Home />
+    </CharactersProvider>
+  )
+}

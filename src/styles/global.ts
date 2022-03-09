@@ -1,24 +1,22 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
-  *{
+const GlobalStyle = createGlobalStyle`
+  * {
     margin: 0;
     padding: 0;
-    outline: 0;
     box-sizing: border-box;
-  }
-
-  body, input, button {
-    font: 16px Roboto, sans-serif;
-  }
-
-  #root {
-    max-width: 1360px;
-    margin: 0 auto;
+    /* outline: 1px solid red; */
 
   }
 
-  button {
-    cursor: pointer;
+  html {
+    font-size: 62.5%;
   }
-`;
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:#eeede7;
+  }
+`
+export default GlobalStyle

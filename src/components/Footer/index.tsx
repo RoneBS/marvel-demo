@@ -1,53 +1,67 @@
-import React from 'react';
-import { FiFacebook, FiTwitter, FiInstagram, FiYoutube } from 'react-icons/fi';
+import * as S from './styles'
 
-import { MainFooter, List } from './style';
+import imgLogo from '../../assets/m-logo.png'
+import imgInsider from '../../assets/insider-logo.png'
+import imgUnlimited from '../../assets/unlimited-logo.png'
 
-import mLogo from '../../assets/m-logo.png';
+import {
+  ImFacebook2,
+  ImInstagram,
+  ImTumblr,
+  ImTwitter,
+  ImYoutube
+} from 'react-icons/im'
 
-const Footer: React.FC = () => {
+import { FaPinterest, FaSnapchatGhost } from 'react-icons/fa'
+
+export const Footer = () => {
   return (
     <>
-      <MainFooter>
-        <div>
-          <img src={mLogo} alt="M logo" />
-          <List>
-            <ul>
-              <li>ABOUT MARVEL</li>
-              <li>HELP/FAQS</li>
-              <li>CARRERS</li>
-              <li>INTERNSHIPS</li>
-            </ul>
-          </List>
-          <List>
-            <ul>
-              <li>ADVERSITING</li>
-              <li>MARVELHQ.COM</li>
-              <li>REDEEM DIGITAL COMICS</li>
-            </ul>
-          </List>
-          <List>
-            <ul>
-              <li>MARVEL INSIDER</li>
-              <li>Get Rewarded</li>
-            </ul>
-          </List>
-          <List>
-            <p>FOLLOW MARVEL</p>
+      <S.MainFooter>
+        <S.LogoImg src={imgLogo} alt="marvel logo" />
+        <S.ExternalPages>
+          <a href="#">ABOUT MARVEL</a>
+          <a href="#">HELP/FAQS</a>
+          <a href="#">CAREERS</a>
+          <a href="#">INTERNSHIPS</a>
+        </S.ExternalPages>
+        <S.ExternalPages>
+          <a href="#">ADVERSING</a>
+          <a href="#">DISNEY+</a>
+          <a href="#">MARVELHQ.COM</a>
+          <a href="#">
+            FREEDOM DIGITAL <br /> COMICS
+          </a>
+        </S.ExternalPages>
+        <S.MarvelProds>
+          <div className="prods-container">
+            <img src={imgInsider} alt="marvel insider logo" />
             <div>
-              <FiFacebook size={20} color="#fff" />
-
-              <FiTwitter size={20} color="#fff" />
-
-              <FiInstagram size={20} color="#fff" />
-
-              <FiYoutube size={20} color="#fff" />
+              <span>MARVEL INSIDER</span>
+              <p>Get Rewarded for Being a Marvel Fan</p>
             </div>
-          </List>
-        </div>
-      </MainFooter>
+          </div>
+          <div className="prods-container">
+            <img src={imgUnlimited} alt="marvel unlimited logo" />
+            <div>
+              <span>MARVEL Unlimited</span>
+              <p>Access Over 29,000+ Digital Comics</p>
+            </div>
+          </div>
+        </S.MarvelProds>
+        <S.SocialMedia>
+          <span>FOLLOW MARVEL</span>
+          <div>
+            <ImFacebook2 size={'24px'} />
+            <ImTwitter size={'24px'} />
+            <ImInstagram size={'24px'} />
+            <ImYoutube size={'24px'} />
+            <ImTumblr size={'24px'} />
+            <FaSnapchatGhost size={'24px'} />
+            <FaPinterest size={'24px'} />
+          </div>
+        </S.SocialMedia>
+      </S.MainFooter>
     </>
-  );
-};
-
-export default Footer;
+  )
+}

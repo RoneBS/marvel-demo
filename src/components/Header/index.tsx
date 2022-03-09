@@ -1,26 +1,20 @@
-import React from 'react';
+import logoImg from '../../assets/marvel-logo.svg'
+import * as C from './styles'
 
-import logoImg from '../../assets/marvel-logo.svg';
-
-import { Navbar, Form } from './styles';
-
-const Header: React.FC = () => {
+export const Header = () => {
   return (
     <>
-      <Navbar>
-        <ul>
+      <C.Navbar>
+        <C.PageList>
           <li>
             <a href="/">Home</a>
           </li>
-          <img src={logoImg} alt="Marvel logo" />
-          <Form>
-            <input type="text" id="fname" name="fname" />
-            <button type="submit">Search</button>
-          </Form>
-        </ul>
-      </Navbar>
+        </C.PageList>
+        <C.LogoImg src={logoImg} alt="Marvel logo" />
+        <C.Form>
+          <input type="text" id="name" placeholder="Search..." />
+        </C.Form>
+      </C.Navbar>
     </>
-  );
-};
-
-export default Header;
+  )
+}
